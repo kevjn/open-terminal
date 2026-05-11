@@ -44,7 +44,7 @@ COPY open_terminal/ open_terminal/
 # Install the app + dependencies into /install so we can cherry-pick them.
 # ➡️  To add extra pip packages to the slim image, append them here:
 #     e.g.  pip install --no-cache-dir --prefix=/install . httpx polars
-RUN pip install --no-cache-dir --prefix=/install .
+RUN pip install --no-cache-dir --prefix=/install . "open-terminal[mcp]"
 
 
 # --------------------------------------------------------------------------
