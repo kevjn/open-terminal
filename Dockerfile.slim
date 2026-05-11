@@ -79,6 +79,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         dnsmasq \
         libcap2-bin \
         ca-certificates \
+        openssh-client \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the pre-built Python packages from the builder stage.
